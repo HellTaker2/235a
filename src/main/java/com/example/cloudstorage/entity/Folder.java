@@ -1,5 +1,8 @@
 package com.example.cloudstorage.entity;
 
+import lombok.Data;
+
+@Data
 public class Folder {
     private String folderId;
     private Integer uid;

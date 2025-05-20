@@ -1,8 +1,16 @@
 package com.example.cloudstorage.entity;
 
-public class Recycle {
-    private Integer uid;
-    private String fid;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.TableField;
+import lombok.Data;
 
+@Data
+public class Recycle {
+    @TableId
+    private String fid;
+    private Integer uid;
+    @TableField("DeleteTime")
     private String deleteTime;
+
 }

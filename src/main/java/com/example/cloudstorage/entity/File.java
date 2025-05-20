@@ -1,6 +1,11 @@
 package com.example.cloudstorage.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.Data;
+
+@Data
 public class File {
+    @TableId
     private String fileId;
     private Integer uid;
     private String fileName;
